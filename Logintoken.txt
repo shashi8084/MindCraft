@@ -1,0 +1,36 @@
+User : 1
+{
+    "message": "Login successful",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OGQyNDdmZTA2MDFkNjE3MjE2ZjA1YiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzcwODU4MTk3LCJleHAiOjE3NzE0NjI5OTd9.HD_EgUCKGw99JOqqdomFHcVbzY-Jj8oIAJcLYJg6zak",
+    "user": {
+        "id": "698d247fe0601d617216f05b",
+        "name": "Shashi",
+        "email": "shashi@test.com",
+        "password": "newpass123",
+        "highestScore": 0,
+        "role": "user"
+    }
+}
+
+User : 2
+{
+    "message": "Login successful",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OTMwYWM0YzFjNmZiYjFmZTkxMjhiNCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzcxMjQ0MzAxLCJleHAiOjE3NzE4NDkxMDF9.no_U8fcU0EKIrI2a6ya6Ng3TeYssepWVs4xCtf9mRhA",
+    "user": {
+        "id": "69930ac4c1c6fbb1fe9128b4",
+        "name": "Shashi",
+        "email": "shekhar@test.com",
+        "password": "Shashi@80",
+        "highestScore": 0,
+        "role": "user"
+    }
+}
+
+1st contest
+{
+    "message": "Contest created successfully",
+    "contestId": "69930d49c1c6fbb1fe9128b7",
+    "joinCode": "8OB0AR"
+}
+
+
