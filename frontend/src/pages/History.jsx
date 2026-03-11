@@ -16,7 +16,7 @@ function History() {
         console.log(err);
       }
     };
-    
+
     fetchHistory();
   }, []);
 
@@ -34,8 +34,8 @@ function History() {
     <div className="min-h-screen bg-[#0f172a] text-slate-100 font-sans pb-20">
       {/* 🔹 Fixed Navbar for History - Compact Dark & Glass */}
       <div className="fixed top-0 left-0 right-0 z-50 bg-[#0f172a]/80 backdrop-blur-2xl border-b border-slate-800/50 h-20 flex items-center justify-between px-8">
-        <div 
-          className="flex items-center gap-3 cursor-pointer group" 
+        <div
+          className="flex items-center gap-3 cursor-pointer group"
           onClick={() => navigate("/dashboard")}
         >
           <div className="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center text-white font-black text-xl group-hover:rotate-6 transition-transform shadow-xl shadow-indigo-900/20 italic">M</div>
@@ -65,7 +65,7 @@ function History() {
           <div className="bg-slate-900/40 backdrop-blur-xl border border-slate-800 p-16 rounded-[40px] text-center shadow-2xl">
             <div className="text-5xl mb-4">🏜️</div>
             <p className="text-slate-400 font-black text-xl mb-6">The archive is empty.</p>
-            <button 
+            <button
               onClick={() => navigate("/dashboard")}
               className="px-8 py-4 bg-indigo-600 text-white rounded-[20px] font-black text-base hover:bg-indigo-700 transition-all active:scale-95 shadow-xl shadow-indigo-900/40"
             >
@@ -75,12 +75,12 @@ function History() {
         ) : (
           <div className="space-y-6">
             {quizzes.map((quiz) => (
-              <div 
-                key={quiz._id} 
+              <div
+                key={quiz._id}
                 className="group bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 p-6 rounded-[32px] shadow-2xl shadow-indigo-950/20 hover:shadow-indigo-500/10 hover:border-indigo-500/40 transition-all duration-500 transform hover:-translate-y-1.5"
               >
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-                  <div 
+                  <div
                     className="flex-1 cursor-pointer"
                     onClick={() => navigate(`/quiz-review/${quiz._id}`)}
                   >
@@ -100,18 +100,17 @@ function History() {
 
                   <div className="flex items-center gap-8 w-full md:w-auto pt-4 md:pt-0 border-t md:border-t-0 border-slate-800">
                     <div className="text-right">
-                       <p className="text-3xl font-black text-white leading-none tracking-tighter">
+                      <p className="text-3xl font-black text-white leading-none tracking-tighter">
                         {quiz.score ?? 0}
                       </p>
                       <p className="text-[9px] font-black text-slate-600 uppercase mt-1.5 tracking-widest">Score</p>
                     </div>
 
-                    <div className={`px-5 py-2 rounded-xl text-[9px] font-black uppercase tracking-widest border ${
-                      quiz.completed 
-                        ? "bg-emerald-950/30 text-emerald-400 border-emerald-900/50" 
+                    <div className={`px-5 py-2 rounded-xl text-[9px] font-black uppercase tracking-widest border ${quiz.completed
+                        ? "bg-emerald-950/30 text-emerald-400 border-emerald-900/50"
                         : "bg-amber-950/30 text-amber-400 border-amber-900/50"
-                    }`}>
-                      {quiz.completed ? "Completed" : "Not Completed" }
+                      }`}>
+                      {quiz.completed ? "Completed" : "Not Completed"}
                     </div>
 
                     {deleteId === quiz._id ? (
@@ -148,7 +147,8 @@ function History() {
         )}
       </main>
 
-      <style dangerouslySetInnerHTML={{ __html: `
+      <style dangerouslySetInnerHTML={{
+        __html: `
         @keyframes slide-left {
           from { opacity: 0; transform: translateX(10px); }
           to { opacity: 1; transform: translateX(0); }

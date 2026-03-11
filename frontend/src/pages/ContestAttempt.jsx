@@ -71,8 +71,8 @@ function ContestAttempt() {
   return (
     <div className="min-h-screen bg-[#0f172a] text-slate-100 font-sans pb-20 pt-28">
       <div className="fixed top-0 left-0 right-0 z-50 bg-[#0f172a]/80 backdrop-blur-2xl border-b border-slate-800/50 h-20 flex items-center justify-between px-8">
-        <div 
-          className="flex items-center gap-3 cursor-pointer group" 
+        <div
+          className="flex items-center gap-3 cursor-pointer group"
           onClick={() => navigate("/dashboard")}
         >
           <div className="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center text-white font-black text-xl group-hover:rotate-6 transition-transform shadow-xl shadow-indigo-900/20 italic">M</div>
@@ -118,11 +118,10 @@ function ContestAttempt() {
                   {q.options.map((opt, i) => (
                     <label
                       key={i}
-                      className={`relative group cursor-pointer transition-all ${
-                        answers[index] === opt 
-                          ? 'ring-2 ring-indigo-500 bg-indigo-900/20' 
+                      className={`relative group cursor-pointer transition-all ${answers[index] === opt
+                          ? 'ring-2 ring-indigo-500 bg-indigo-900/20'
                           : 'bg-slate-800/40 hover:bg-slate-800 border border-slate-700/50'
-                      } p-4 rounded-2xl flex items-center gap-4`}
+                        } p-4 rounded-2xl flex items-center gap-4`}
                     >
                       <input
                         type="radio"
@@ -131,16 +130,14 @@ function ContestAttempt() {
                         onChange={() => handleOptionSelect(index, opt)}
                         className="hidden"
                       />
-                      <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all ${
-                        answers[index] === opt 
-                          ? 'border-indigo-400 bg-indigo-400' 
+                      <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all ${answers[index] === opt
+                          ? 'border-indigo-400 bg-indigo-400'
                           : 'border-slate-600 group-hover:border-slate-500'
-                      }`}>
+                        }`}>
                         {answers[index] === opt && <div className="w-2 h-2 bg-white rounded-full" />}
                       </div>
-                      <span className={`font-bold text-sm transition-colors ${
-                        answers[index] === opt ? 'text-white' : 'text-slate-400'
-                      }`}>
+                      <span className={`font-bold text-sm transition-colors ${answers[index] === opt ? 'text-white' : 'text-slate-400'
+                        }`}>
                         {opt}
                       </span>
                     </label>

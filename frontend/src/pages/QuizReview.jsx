@@ -113,7 +113,7 @@ function QuizReview() {
 
                   {(userAnswer === undefined || userAnswer === "") && (
                     <p className="pl-12 text-amber-500 text-[10px] font-black uppercase tracking-widest flex items-center gap-2">
-                       <span>⚠️</span> Not Attempted
+                      <span>⚠️</span> Not Attempted
                     </p>
                   )}
                 </div>
@@ -133,6 +133,7 @@ function QuizReview() {
       </div>
     </div>
   );
-协同}
+  协同
+}
 
 export default QuizReview;

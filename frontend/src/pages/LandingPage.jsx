@@ -1,7 +1,9 @@
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 function LandingPage() {
   const navigate = useNavigate();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-[#0f172a] text-slate-100 font-sans selection:bg-indigo-500/30 relative overflow-hidden">
@@ -16,6 +18,7 @@ function LandingPage() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0f172a]/70 backdrop-blur-xl border-b border-slate-800">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
 
+          {/* Logo */}
           <div
             className="flex items-center gap-2 cursor-pointer"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -29,7 +32,8 @@ function LandingPage() {
             </h1>
           </div>
 
-          <div className="flex items-center gap-8">
+          {/* Desktop Menu */}
+          <div className="hidden md:flex items-center gap-8">
 
             <button
               onClick={() => navigate("/login")}
@@ -46,7 +50,37 @@ function LandingPage() {
             </button>
 
           </div>
+
+          {/* Mobile Hamburger */}
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="md:hidden text-slate-300 text-2xl"
+          >
+            ☰
+          </button>
+
         </div>
+
+        {/* Mobile Menu */}
+        {menuOpen && (
+          <div className="md:hidden bg-[#0f172a] border-t border-slate-800 px-6 py-6 flex flex-col gap-4">
+
+            <button
+              onClick={() => navigate("/login")}
+              className="text-slate-300 font-semibold hover:text-indigo-400"
+            >
+              Login
+            </button>
+
+            <button
+              onClick={() => navigate("/signup")}
+              className="bg-gradient-to-r from-indigo-500 to-violet-600 text-black py-2 rounded-xl font-semibold"
+            >
+              Join Free
+            </button>
+
+          </div>
+        )}
       </nav>
 
       {/* 🚀 Hero Section */}
@@ -122,12 +156,12 @@ function LandingPage() {
               </div>
 
               <h3 className="text-2xl font-bold mb-4 text-white">
-                Live Contests
+                Host Contests
               </h3>
 
               <p className="text-slate-400 leading-relaxed">
-                Join real-time arenas with other players. Compete for the top
-                spot on our global leaderboard.
+                Host live contests with other players. So they can compete for the top
+                spot on our leaderboard.
               </p>
 
             </div>

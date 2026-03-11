@@ -37,7 +37,7 @@ function App() {
           <Route path="/contest/:contestId" element={<ContestAttempt />} />
           <Route path="/contest-leaderboard/:contestId" element={<ContestLeaderboard />} />
           <Route path="/create-contest" element={<CreateContest />} />
-          <Route path="/quiz-review/:id" element={ <QuizReview /> } />
+          <Route path="/quiz-review/:id" element={<QuizReview />} />
         </Route>
       </Routes>
     </Router>

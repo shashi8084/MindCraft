@@ -11,8 +11,8 @@ function Navbar({ user }) {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 h-20 bg-[#0f172a]/80 backdrop-blur-2xl border-b border-slate-800/50 flex items-center justify-between px-8 transition-all">
-      <div 
-        className="flex items-center gap-3 cursor-pointer group" 
+      <div
+        className="flex items-center gap-3 cursor-pointer group"
         onClick={() => navigate(user ? "/dashboard" : "/")}
       >
         <div className="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center text-white font-bold text-xl group-hover:rotate-6 transition-transform shadow-xl shadow-indigo-900/20">M</div>
@@ -21,14 +21,14 @@ function Navbar({ user }) {
 
       <div className="flex items-center gap-6">
         {!user && (
-          <button 
+          <button
             onClick={() => navigate("/login")}
             className="text-slate-400 font-bold hover:text-indigo-400 transition-colors px-3 py-2"
           >
             Login
           </button>
         )}
-        
+
         {user && (
           <div className="flex items-center gap-4 bg-slate-800/50 p-1.5 pr-4 rounded-full border border-slate-700 shadow-inner">
             <div className="w-10 h-10 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold shadow-lg">

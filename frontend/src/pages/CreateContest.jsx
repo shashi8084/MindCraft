@@ -89,7 +89,7 @@ function CreateContest() {
           {/* ⚡ Left Column: Form Section */}
           <div className="lg:col-span-8">
             <div className="bg-slate-900/60 backdrop-blur-2xl border border-slate-800 p-6 md:p-8 rounded-[40px] shadow-2xl shadow-indigo-950/20">
-              <div className="flex items-center gap-4 mb-6">  
+              <div className="flex items-center gap-4 mb-6">
                 <div>
                   <h3 className="text-xl font-bold text-white leading-tight">Quiz Configuration</h3>
                   <p className="text-slate-500 text-[10px] font-bold uppercase tracking-widest">Set Parameters</p>

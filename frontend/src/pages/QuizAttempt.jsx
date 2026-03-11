@@ -185,11 +185,10 @@ function QuizAttempt() {
                   {q.options.map((option, i) => (
                     <label
                       key={i}
-                      className={`relative group cursor-pointer transition-all ${
-                        answers[index] === option 
-                          ? 'ring-2 ring-indigo-500 bg-indigo-900/20' 
+                      className={`relative group cursor-pointer transition-all ${answers[index] === option
+                          ? 'ring-2 ring-indigo-500 bg-indigo-900/20'
                           : 'bg-slate-800/40 hover:bg-slate-800 border border-slate-700/50'
-                      } p-4 rounded-2xl flex items-center gap-4`}
+                        } p-4 rounded-2xl flex items-center gap-4`}
                     >
                       <input
                         type="radio"
@@ -198,16 +197,14 @@ function QuizAttempt() {
                         onChange={() => handleOptionSelect(index, option)}
                         className="hidden"
                       />
-                      <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all ${
-                        answers[index] === option 
-                          ? 'border-indigo-400 bg-indigo-400' 
+                      <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all ${answers[index] === option
+                          ? 'border-indigo-400 bg-indigo-400'
                           : 'border-slate-600 group-hover:border-slate-500'
-                      }`}>
+                        }`}>
                         {answers[index] === option && <div className="w-2 h-2 bg-white rounded-full" />}
                       </div>
-                      <span className={`font-bold text-sm transition-colors ${
-                        answers[index] === option ? 'text-white' : 'text-slate-400'
-                      }`}>
+                      <span className={`font-bold text-sm transition-colors ${answers[index] === option ? 'text-white' : 'text-slate-400'
+                        }`}>
                         {option}
                       </span>
                     </label>

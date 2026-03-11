@@ -10,7 +10,7 @@ const sendEmail = async (to, subject, html) => {
   });
 
   await transporter.sendMail({
-    from: `"QuizCraft AI" <${process.env.EMAIL_USER}>`,
+    from: `"MindCraft" <${process.env.EMAIL_USER}>`,
     to,
     subject,
     html

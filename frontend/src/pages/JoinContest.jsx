@@ -90,7 +90,7 @@ function JoinContest() {
                   <p className="text-slate-500 text-[10px] font-bold uppercase tracking-widest">Authorize with access code</p>
                 </div>
               </div>
-              
+
               {error && (
                 <div className="mb-8 p-4 bg-red-950/30 border border-red-900/50 text-red-400 rounded-xl text-xs font-bold flex items-center justify-center gap-3 animate-shake">
                   ⚠️ {error}

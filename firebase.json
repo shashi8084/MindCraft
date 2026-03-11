@@ -12,5 +12,13 @@
         "destination": "/index.html"
       }
     ]
+  },
+  "auth": {
+    "providers": {
+      "googleSignIn": {
+        "oAuthBrandDisplayName": "MindCraft",
+        "supportEmail": "shashishekhar9507@gmail.com"
+      }
+    }
   }
 }

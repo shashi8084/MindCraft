@@ -3,12 +3,12 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBG53ELp0F2HlRdMUvVUGV5YG0a92W_HUM",
-  authDomain: "quizcraft-f47fb.firebaseapp.com",
-  projectId: "quizcraft-f47fb",
-  storageBucket: "quizcraft-f47fb.appspot.com",
-  messagingSenderId: "71053425425",
-  appId: "1:71053425425:web:149f9f7afc6bb2025caab0"
+  apiKey: "AIzaSyCixvDOGSbvB2yaz4Z8Q9wuV7QDROOoZDU",
+  authDomain: "mindcraft-quiz-app.firebaseapp.com",
+  projectId: "mindcraft-quiz-app",
+  storageBucket: "mindcraft-quiz-app.firebasestorage.app",
+  messagingSenderId: "205818391347",
+  appId: "1:205818391347:web:d62d0dd1db346cc129ec46"
 };
 
 // Initialize Firebase
