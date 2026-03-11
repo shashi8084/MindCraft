@@ -3,9 +3,9 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCixvDOGSbvB2yaz4Z8Q9wuV7QDROOoZDU",
-  authDomain: "mindcraft-quiz-app.firebaseapp.com",
-  projectId: "mindcraft-quiz-app",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
   storageBucket: "mindcraft-quiz-app.firebasestorage.app",
   messagingSenderId: "205818391347",
   appId: "1:205818391347:web:d62d0dd1db346cc129ec46"
